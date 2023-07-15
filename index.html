@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Code Output Quiz</title>
+   <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 0%;
+    right: 0;
+    /* transform: translateY(-50%); */
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+}
+
+code {
+    display: block;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.output {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Dark Theme */
+.dark-mode {
+    background-color: #333;
+    color: #f2f2f2;
+}
+
+.dark-mode input[type="text"] {
+    background-color: #555;
+    color: #f2f2f2;
+}
+
+.dark-mode .container {
+    background-color: #222;
+    color: #f2f2f2;
+}
+
+.dark-mode code {
+    background-color: #444;
+    color: #f2f2f2;
+}
+.dark-mode h1 {
+    /* background-color: #444; */
+    color: #f2f2f2;
+}
+
+.description {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #555;
+}
+
+.like-button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.like-button button {
+    background-color: #ccc;
+    color: #333;
+    margin-right: 10px;
+}
+
+.like-button button.active {
+    background-color: #4CAF50;
+    color: #fff;
+}
+
+/* Exciting Animations */
+/*
+.container.correct-answer {
+    animation: sprinkleAnimation 2s linear;
+}
+
+.container.incorrect-answer {
+    animation: denyAnimation 1s linear;
+}
+
+@keyframes sprinkleAnimation {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(100%); }
+}
+
+@keyframes denyAnimation {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-10px); }
+    40% { transform: translateX(10px); }
+    60% { transform: translateX(-10px); }
+    80% { transform: translateX(10px); }
+    100% { transform: translateX(0); }
+}
+*/
+
+/* Dark Mode Button */
+.dark-mode-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+</style>
+<body>
+    <div class="container" id="container">
+        <span class="dark-mode-button">
+            <button onclick="toggleDarkMode()">Dark Mode</button>
+        </span>
+        <h1>Code Output Quiz</h1>
+        <p>Write the output of the following code:</p>
+        <code>
+            <pre class="code snippet" id="codeSnippet"></pre>
+        </code>
+        <input type="text" id="outputInput" placeholder="Your answer">
+        <button onclick="checkAnswer()">Submit</button>
+        <div class="output" id="output"></div>
+        <div class="description" id="description" style="display: none;">
+            <p>Correct Answer: <strong id="correctAnswer"></strong></p>
+            <p>Description: <span id="descriptionText"></span></p>
+        </div>
+        <div class="like-button">
+            <button onclick="toggleLike()" id="likeButton">Like</button>
+        </div>
+    </div>
+    <script src="background.js"></script>
+</body>
+</html>
