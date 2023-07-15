@@ -1,3 +1,58 @@
+/* Add this CSS to style.css */
+
+.hamburger-menu {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 200px;
+}
+
+.hamburger-menu button {
+  font-size: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.hamburger-menu-content {
+  border: 2px solid rgb(4, 19, 4);
+  display: none;
+  position: absolute;
+  background-color: #ffffffc6;
+  padding: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hamburger-menu-content.show {
+  display: block;
+}
+
+.hamburger-menu-content h4 {
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.hamburger-menu-content ul {
+  padding: 0;
+  margin: 0;
+}
+
+.hamburger-menu-content ul li {
+  list-style-type: none;
+  margin-bottom: 5px;
+}
+select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+
+
+
+
 body {
     background-color: #f2f2f2;
     font-family: Arial, sans-serif;
@@ -60,13 +115,19 @@ min-height:600px;
     border-radius: 5px;
     cursor: pointer;
   }
-
+  #checkAnswer{
+    margin-top: 10px;
+  }
   .output {
     margin-top: 20px;
     font-weight: bold;
     color: #333;
   }
-
+  .dark-mode-button{
+    position: absolute;
+    top: 10px;
+    right: 0;
+  }
   .dark-mode {
     background-color: #333;
     color: #f2f2f2;
@@ -75,6 +136,7 @@ min-height:600px;
   .dark-mode input[type="text"] {
     background-color: #555;
     color: #f2f2f2;
+    width: 97%;
   }
 
   .dark-mode .container {
