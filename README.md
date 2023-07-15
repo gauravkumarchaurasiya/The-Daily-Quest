@@ -14,7 +14,7 @@ To download and install the extension, follow these simple steps:
    git clone https://github.com/gauravkumarchaurasiya/The-Daily-Quest.git
 
    ```
-2. Open your preferred browser and navigate to the extensions page. For example, in Google Chrome, you can enter chrome://extensions in the address bar.
+2. Open your preferred browser and navigate to the extensions page. For example, in Google Chrome, you can enter `chrome://extensions` in the address bar.
   
 3. Enable the developer mode or open the developer options. This allows you to load unpacked extensions.
   
