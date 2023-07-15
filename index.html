@@ -1,45 +1,44 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Code Output Quiz</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <div class="container" id="container">
-    <div class="hamburger-menu">
-      <button id="toggleHamburger">&#9776;</button>
-      <div class="hamburger-menu-content">
-        <h4>Select Topic</h4>
-        <select id="topicSelect">
-          <option value="python">Python</option>
-          <option value="Algorithm-python">Algorithms in python</option>
-          <option value="java-OOPS">Java OOPs Concept</option>
-          <option value="data-structure-in-C">Data Structure in C</option>
-        </select>
+  <head>
+    <title>The Daily Code</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container" id="container">
+      <div class="hamburger-menu">
+        <button id="toggleHamburger">&#9776;</button>
+        <div class="hamburger-menu-content">
+          <h4>Select Topic</h4>
+          <select id="topicSelect">
+            <option value="python">Python</option>
+            <option value="Algorithm-python">Algorithms in python</option>
+            <option value="java-OOPS">Java OOPs Concept</option>
+            <option value="data-structure-in-C">Data Structure in C</option>
+          </select>
+        </div>
       </div>
-    </div>
-        <span class="dark-mode-button">
-            <button id="toggleDarkMode">Dark Mode</button>
-        </span>
-        <h1>Code Output Quiz</h1>
-        <p>Write the output of the following code:</p>
-        <code>
-            <pre id="codeSnippet">Select any Topic First </pre>
-        </code>
-        <input type="text" id="outputInput" placeholder="Your answer" />
-        <button id="checkAnswer">Submit</button>
-        <div class="output" id="output"></div>
-        <div class="description" id="description" style="display: none">
-            <p>Correct Answer: <strong id="correctAnswer"></strong></p>
-            <p>Description: <span id="descriptionText"></span></p>
-        </div>
-        <div class="like-button" id="likeButton">
-            <button id="toggleLike" id="likeButton">Like</button>
-        </div>
-        
+      <span class="dark-mode-button">
+        <button id="toggleDarkMode">Dark Mode</button>
+      </span>
+      <h1>The Daily Code</h1>
+      <p id="questionText">Write the output of the following code:</p>
+      <code>
+        <pre id="codeSnippet">Select any Topic First </pre>
+      </code>
+      <input type="text" id="outputInput" placeholder="Your answer" />
+      <button id="checkAnswer">Submit</button>
+      <div class="output" id="output"></div>
+      <div class="description" id="description" style="display: none">
+        <p>Correct Answer: <strong id="correctAnswer"></strong></p>
+        <p>Description: <span id="descriptionText"></span></p>
+      </div>
+      <div class="like-button" id="likeButton">
+        <button id="toggleLike" id="likeButton">Like</button>
+      </div>
     </div>
 
     <script src="background.js"></script>
     <script src="index.js"></script>
-</body>
+  </body>
 </html>

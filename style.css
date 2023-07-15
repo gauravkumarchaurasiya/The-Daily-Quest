@@ -1,5 +1,3 @@
-/* Add this CSS to style.css */
-
 .hamburger-menu {
   position: absolute;
   top: 10px;
@@ -49,129 +47,122 @@ select {
   border-radius: 5px;
 }
 
-
-
-
-
 body {
-    background-color: #f2f2f2;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    margin: 0;
-    padding: 0;
-    width:500px;
-    /* height:500px; */
-    min-width: 500px;
-    max-width: 800px;
-  }
+  background-color: #f2f2f2;
+  font-family: Arial, sans-serif;
+  font-size: 20px;
+  margin: 0;
+  padding: 0;
+  width: 500px;
+  /* height:500px; */
+  min-width: 500px;
+  max-width: 800px;
+}
 
-  .container {
-    width:500px;
-min-height:600px;
-    margin: 0 auto;
-      padding: 20px;
-      background-color: #fff;
-      border-radius: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      position: absolute;
-      top: 0%;
-      right: 0;
-    }
-    
-    .container * {
-      max-width: 100%; /* Allow content to wrap within the fixed width */
-    }
-    
-    
-  
+.container {
+  width: 500px;
+  min-height: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  top: 0%;
+  right: 0;
+}
 
-  h1 {
-    color: #333;
-    text-align: center;
-  }
+.container * {
+  max-width: 100%; /* Allow content to wrap within the fixed width */
+}
 
-  code {
-    display: block;
-    background-color: #f5f5f5;
-    padding: 10px;
-    border-radius: 5px;
-    font-family: monospace;
-    overflow-x: auto;
-  }
+h1 {
+  color: #333;
+  text-align: center;
+}
 
-  input[type="text"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
+code {
+  display: block;
+  background-color: #f5f5f5;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: monospace;
+  overflow-x: auto;
+}
 
-  button {
-    padding: 10px 20px;
-    background-color: #4caf50;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  #checkAnswer{
-    margin-top: 10px;
-  }
-  .output {
-    margin-top: 20px;
-    font-weight: bold;
-    color: #333;
-  }
-  .dark-mode-button{
-    position: absolute;
-    top: 10px;
-    right: 0;
-  }
-  .dark-mode {
-    background-color: #333;
-    color: #f2f2f2;
-  }
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
 
-  .dark-mode input[type="text"] {
-    background-color: #555;
-    color: #f2f2f2;
-    width: 97%;
-  }
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+#checkAnswer {
+  margin-top: 10px;
+}
+.output {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+.dark-mode-button {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+.dark-mode {
+  background-color: #333;
+  color: #f2f2f2;
+}
 
-  .dark-mode .container {
-    background-color: #222;
-    color: #f2f2f2;
-  }
+.dark-mode input[type="text"] {
+  background-color: #555;
+  color: #f2f2f2;
+  width: 97%;
+}
 
-  .dark-mode code {
-    background-color: #444;
-    color: #f2f2f2;
-  }
+.dark-mode .container {
+  background-color: #222;
+  color: #f2f2f2;
+}
 
-  .dark-mode h1 {
-    color: #f2f2f2;
-  }
+.dark-mode code {
+  background-color: #444;
+  color: #f2f2f2;
+}
 
-  .description {
-    margin-top: 20px;
-    font-size: 14px;
-    color: #555;
-  }
+.dark-mode h1 {
+  color: #f2f2f2;
+}
 
-  .like-button {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-  }
+.description {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #555;
+}
 
-  .like-button button {
-    background-color: #ccc;
-    color: #333;
-    margin-right: 10px;
-  }
+.like-button {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
 
-  .like-button button.active {
-    background-color: #4caf50;
-    color: #fff;
-  }
+.like-button button {
+  background-color: #ccc;
+  color: #333;
+  margin-right: 10px;
+}
+
+.like-button button.active {
+  background-color: #4caf50;
+  color: #fff;
+}
