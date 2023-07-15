@@ -1,12 +1,12 @@
 {
-  "manifest_version": 2,
+  "manifest_version": 3,
   "name": "DailyCode",
   "version": "1.0",
   "description": "This extension gives daily coding questions like 'What will be the output of the following code?'",
   "icons": {
     "128": "icon128.png"
   },
-  "browser_action": {
+  "action": {
     "default_icon": {
       "128": "icon128.png"
     },
@@ -17,9 +17,13 @@
     "storage"
   ],
   "background": {
-    "scripts": [
-      "background.js"
-    ],
-    "persistent": false
-  }
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["index.js"],
+      "css": ["style.css"]
+    }
+  ]
 }
