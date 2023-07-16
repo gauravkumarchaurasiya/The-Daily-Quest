@@ -106,6 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function redirectToGitHub() {
-    window.open("https://github.com/gauravkumarchaurasiya/codequiz", "_blank");
+    window.open("https://github.com/gauravkumarchaurasiya/The-Daily-Quest/blob/master/README.md", "_blank");
   }
 });
